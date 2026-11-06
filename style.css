@@ -357,7 +357,6 @@ width: calc(100%/3);
   padding: 32px 24px;
 }
 #features .row__narrow {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
