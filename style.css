@@ -446,14 +446,15 @@ QUALITY WORK ↓
   cursor: pointer;
 }
 .quality__img--wrapper {
+  position: relative;
   z-index: 1;
 }
 .quality__img {
+  position: relative;
   z-index: 1;
-}
-.img {
   width: 100%;
 }
+
 .quality__grid {
   transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
   width: 80px;
@@ -464,7 +465,6 @@ QUALITY WORK ↓
   fill: rgb(100, 21, 255);
   color: rgba(100, 21, 255, var(--tw-text-opacity));
   z-index: 0;
-
   display: block;
 }
 
