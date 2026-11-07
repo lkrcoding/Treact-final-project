@@ -9,8 +9,6 @@
   box-sizing: border-box;
   font-family: inter, sans-serif;
   color: #243e63;
-  margin: 8px;
-  padding: 8px;
 }
 
 body {
@@ -331,7 +329,6 @@ FEATURES ↓
   flex: start;
   padding: 32px 8px;
   margin: 0 16px;
-
 }
 .feature__title {
   padding: 32px 8px;
@@ -343,22 +340,22 @@ FEATURES ↓
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  justify-content: center;
 }
 
 .feature {
-width: calc(100%/3);
+  width: calc(100% / 3);
 }
 
-#features.row{
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  padding: 32px 24px;
-}
-#features .row__narrow {
+#feature__row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px 24px;
+}
+.row__narrow {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 32px 24px;
@@ -367,46 +364,42 @@ width: calc(100%/3);
   display: flex;
   flex-shrink: 0;
   padding: 20px;
-  border: 1px solid #e5e7eb;  
+  border: 1px solid #e5e7eb;
   border-radius: 50%;
 }
-h4{
+h4 {
   font-size: 16px;
-  }
   color: #6415ff;
   letter-spacing: 1.6px;
   font-weight: 700;
   text-transform: uppercase;
   align-items: center;
 }
-
-h4 {
-  display: block;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px; 
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
-  :root {
+:root {
   --fa-style-family-classic: "Font Awesome 6 Free";
   --fa-font-solid: normal 900 1em /1 "Font Awesome 6 Free";
-  }
-  :root {
-    --fa-font-regular: normal 400 1em /1 "Font Awesome 6 Free";
-  }
-  :root {
-    --fa-style-family-brands: "Font Awesome 6 Brands";
-    --fa-font-brands: normal 400 1em /1 "Font Awesome 6 Brands";
-  }
-  @font-face {
-  font-family: 'Inter';
+}
+:root {
+  --fa-font-regular: normal 400 1em /1 "Font Awesome 6 Free";
+}
+:root {
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em /1 "Font Awesome 6 Brands";
+}
+@font-face {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-      src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
-    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range:
+    U + 0460 -052F,
+    U + 1C80 -1C8A,
+    U + 20B4,
+    U + 2DE0 -2DFF,
+    U + A640-A69F,
+    U + FE2E-FE2F;
 }
 
 .section__title,
