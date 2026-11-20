@@ -324,6 +324,7 @@ FEATURES ↓
 }
 .feature__row {
   box-sizing: border-box;
+  align-items: space-around;
   display: flex;
   align-items: center;
   flex: start;
@@ -491,7 +492,9 @@ QUALITY WORK ↓
 STEPS ↓
 
 */
-
+.steps__img--wrapper {
+  padding: 75px 0 0 0;
+}
 .section__title {
   display: flex;
   flex-wrap: wrap;
@@ -512,14 +515,17 @@ STEPS ↓
 }
 #steps .step__para {
   font-size: 14px;
-  line-height: 1.5;
-  max-width: 200px;
+  color: rgb(113, 128, 150);
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+  max-width: 300px;
 }
 
 #steps .row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   margin: 0 auto;
   gap: 48px;
 }
@@ -527,7 +533,6 @@ STEPS ↓
 .row {
   width: 100%;
   max-width: 1280px;
-  margin: 0 24px;
 }
 .steps__img {
   z-index: 2;
@@ -555,7 +560,7 @@ STEPS ↓
   letter-spacing: 0.025em;
 }
 .section__tag {
-  padding: 0 24px;
+  padding: 24px;
   font-size: 16px;
   color: rgb(100, 21, 255);
   letter-spacing: 1.6px;
@@ -566,26 +571,21 @@ STEPS ↓
   font-size: 48px;
   line-height: 1.25;
 }
-#section__title {
+
+h2.section__title {
+  word-spacing: -10px;
   display: flex;
+  flex-wrap: wrap;
 }
+
 #steps .purple {
   position: relative;
   letter-spacing: 1.2px;
 }
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
+
 #steps_description,
 .step {
-  padding: 32px 0px 32px 64px;
+  padding: 0px 0px 0px 64px;
   display: flex;
   flex-direction: column;
   max-width: 320px;
